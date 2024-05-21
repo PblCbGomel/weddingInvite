@@ -110,7 +110,6 @@ body {
 }
 
 .schedule {
-  height: 400px;
   position: relative;
   z-index: 1;
   display: flex;
@@ -121,12 +120,17 @@ body {
   box-sizing: border-box;
 }
 
+.schedule,
+.schedule::before,
+.schedule::after {
+  height: 700px;
+}
+
 .schedule::before {
   content: "";
   background-image: url("./images/шелк-фон.jpg");
   background-size: cover;
   opacity: 0.2;
-  height: 400px;
   position: absolute;
   z-index: -3;
   top: 0;
@@ -140,7 +144,6 @@ body {
   background-color: #fffbdb;
   opacity: 0.5;
   position: absolute;
-  height: 400px;
   z-index: -2;
   top: 0;
   left: 0;
@@ -162,6 +165,25 @@ body {
   border-radius: 50%;
   height: 20px;
   width: 20px;
+}
+
+.calendar {
+  background-image: url(./images/Календарь.png);
+  width: 400px;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.calendar .heart {
+  position: absolute;
+  background-image: url(./images/heart.png);
+  background-size: cover;
+  width: 60px;
+  height: 50px;
+  right: 0;
+  top: 57%;
 }
 
 .time-info {

@@ -76,3 +76,24 @@ body {
   background-size: contain;
   opacity: 1;
 }
+
+.info {
+  background-color: #656da2;
+  height: 300px;
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.info .block {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.info .block h3 {
+  font-size: 1.2rem;
+}

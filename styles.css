@@ -7,6 +7,11 @@ body {
   font-size: 24px;
 }
 
+::selection {
+  background: #fffbdb; /* Цвет фона */
+  color: #cf6363; /* Цвет текста */
+}
+
 .header-section::before {
   content: "";
   background-image: url("./images/шелк-фон.jpg");

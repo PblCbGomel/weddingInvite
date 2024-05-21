@@ -242,3 +242,48 @@ body {
   background-position: center;
   border-radius: 1rem;
 }
+
+.last-word,
+.last-word::before,
+.last-word::after {
+  height: 200px;
+}
+
+.last-word {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.last-word::before {
+  content: "";
+  background-image: url("./images/шелк-фон.jpg");
+  background-size: cover;
+  opacity: 0.2;
+  position: absolute;
+  z-index: -3;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.last-word::after {
+  content: "";
+  background-color: #fffbdb;
+  opacity: 0.5;
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.last-word h3 {
+  font-size: 2.5rem;
+}

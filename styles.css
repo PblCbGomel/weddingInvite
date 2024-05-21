@@ -10,20 +10,32 @@ body {
 .header-section::before {
   content: "";
   background-image: url("./images/шелк-фон.jpg");
-  background-size: contain;
+  background-size: cover;
   opacity: 0.2;
   height: 600px;
   position: absolute;
-  z-index: -1;
+  z-index: -3;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.header-section::after {
+  content: "";
+  background-color: #fffbdb;
+  opacity: 0.5;
+  position: absolute;
+  height: 600px;
+  z-index: -2;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
 }
 .header-section {
-  background-color: #fffbdb;
+  z-index: 1;
   height: 600px;
-  opacity: 0.5;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -74,7 +86,6 @@ body {
   border: 2px solid #656da2;
   position: absolute;
   background-size: contain;
-  opacity: 1;
 }
 
 .info {
@@ -96,4 +107,74 @@ body {
 
 .info .block h3 {
   font-size: 1.2rem;
+}
+
+.schedule {
+  height: 400px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.schedule::before {
+  content: "";
+  background-image: url("./images/шелк-фон.jpg");
+  background-size: cover;
+  opacity: 0.2;
+  height: 400px;
+  position: absolute;
+  z-index: -3;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.schedule::after {
+  content: "";
+  background-color: #fffbdb;
+  opacity: 0.5;
+  position: absolute;
+  height: 400px;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.schedule .timeline {
+  height: 10px;
+  width: 80%;
+  background-color: #cf6363;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.schedule .timeline .circle {
+  background-color: #cf6363;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+
+.time-info {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.time-info .block {
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
 }

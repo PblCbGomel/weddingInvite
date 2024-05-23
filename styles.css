@@ -60,25 +60,25 @@ body {
 .photo-1 {
   transform: rotate(15deg);
   background-image: url(./images/фото-1.jpg);
-  left: 12%;
-  top: 20%;
+  left: 15%;
+  top: 16%;
 }
 .photo-2 {
   transform: rotate(-5deg);
   background-image: url(./images/фото-2.jpg);
-  left: 12%;
+  left: 15%;
   top: 45%;
 }
 .photo-3 {
   transform: rotate(-12deg);
   background-image: url(./images/фото-3.jpg);
-  left: 75%;
+  left: 72%;
   top: 20%;
 }
 .photo-4 {
   transform: rotate(7deg);
   background-image: url(./images/фото-4.jpg);
-  left: 75%;
+  left: 72%;
   top: 45%;
 }
 
@@ -90,7 +90,8 @@ body {
   height: 200px;
   border: 2px solid #656da2;
   position: absolute;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 
 .info {
@@ -320,25 +321,25 @@ body {
   .photo-1 {
     transform: rotate(15deg);
     background-image: url(./images/фото-1.jpg);
-    left: 5%;
+    left: 13%;
     top: 26%;
   }
   .photo-2 {
     transform: rotate(-5deg);
     background-image: url(./images/фото-2.jpg);
-    left: 5%;
+    left: 13%;
     top: 45%;
   }
   .photo-3 {
     transform: rotate(-12deg);
     background-image: url(./images/фото-3.jpg);
-    left: 78%;
+    left: 72%;
     top: 26%;
   }
   .photo-4 {
     transform: rotate(7deg);
     background-image: url(./images/фото-4.jpg);
-    left: 78%;
+    left: 72%;
     top: 45%;
   }
 
@@ -479,25 +480,25 @@ body {
   .photo-1 {
     transform: rotate(15deg);
     background-image: url(./images/фото-1.jpg);
-    left: 11%;
+    left: 16%;
     top: 23%;
   }
   .photo-2 {
     transform: rotate(-5deg);
     background-image: url(./images/фото-2.jpg);
-    left: 11%;
+    left: 16%;
     top: 42%;
   }
   .photo-3 {
     transform: rotate(-12deg);
     background-image: url(./images/фото-3.jpg);
-    left: 70%;
+    left: 65%;
     top: 23%;
   }
   .photo-4 {
     transform: rotate(7deg);
     background-image: url(./images/фото-4.jpg);
-    left: 70%;
+    left: 65%;
     top: 42%;
   }
 
@@ -638,25 +639,25 @@ body {
   .photo-1 {
     transform: rotate(15deg);
     background-image: url(./images/фото-1.jpg);
-    left: 5%;
+    left: 15%;
     top: 23%;
   }
   .photo-2 {
     transform: rotate(-5deg);
     background-image: url(./images/фото-2.jpg);
-    left: 5%;
+    left: 15%;
     top: 42%;
   }
   .photo-3 {
     transform: rotate(-12deg);
     background-image: url(./images/фото-3.jpg);
-    left: 68%;
+    left: 64%;
     top: 23%;
   }
   .photo-4 {
     transform: rotate(7deg);
     background-image: url(./images/фото-4.jpg);
-    left: 68%;
+    left: 64%;
     top: 42%;
   }
 

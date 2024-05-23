@@ -33,5 +33,7 @@ function updateCountdown() {
     .padStart(2, "0");
 }
 
+updateCountdown();
+
 // Обновляем счетчик каждую секунду
 setInterval(updateCountdown, 1000);

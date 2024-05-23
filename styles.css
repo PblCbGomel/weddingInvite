@@ -28,7 +28,6 @@ body {
   background-image: url("./images/шелк-фон.jpg");
   background-size: cover;
   opacity: 0.2;
-  height: 600px;
   position: absolute;
   z-index: -3;
   top: 0;
@@ -42,7 +41,6 @@ body {
   background-color: #fffbdb;
   opacity: 0.5;
   position: absolute;
-  height: 600px;
   z-index: -2;
   top: 0;
   left: 0;
@@ -51,12 +49,16 @@ body {
 }
 .header-section {
   z-index: 1;
-  height: 600px;
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+.header-main {
   display: flex;
   gap: 2rem;
+  min-height: 500px;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 .header-info {
@@ -72,7 +74,7 @@ body {
 .right-photo {
   position: relative;
   width: 200px;
-  height: 100%;
+  min-height: 500px;
 }
 
 .header-section h1 {
@@ -154,7 +156,7 @@ body {
 .schedule,
 .schedule::before,
 .schedule::after {
-  height: 750px;
+  padding: 5rem;
 }
 
 .schedule::before {
@@ -325,11 +327,8 @@ body {
   body {
     font-size: 20px;
   }
-
-  .header-section::before,
-  .header-section::after,
-  .header-section {
-    height: 400px;
+  .header-main {
+    min-height: 350px;
   }
 
   .header-section {
@@ -360,6 +359,7 @@ body {
   .left-photo,
   .right-photo {
     width: 130px;
+    min-height: 350px;
   }
 
   .photo-1,
@@ -476,18 +476,17 @@ body {
     font-size: 18px;
   }
 
+  .header-main {
+    min-height: 280px;
+  }
+
   .text {
     font-size: 14px;
   }
 
-  .header-section::before,
-  .header-section::after,
-  .header-section {
-    height: 300px;
-  }
-
   .header-section {
     gap: 2rem;
+    padding-bottom: 2rem;
   }
 
   .header-section h1 {
@@ -523,6 +522,7 @@ body {
   .left-photo,
   .right-photo {
     width: 100px;
+    min-height: 280px;
   }
 
   .info {
@@ -631,14 +631,11 @@ body {
     font-size: 14px;
   }
 
+  .header-main {
+    min-height: 200px;
+  }
   .text {
     font-size: 10px;
-  }
-
-  .header-section::before,
-  .header-section::after,
-  .header-section {
-    height: 280px;
   }
 
   .header-section {
@@ -671,6 +668,7 @@ body {
   .left-photo,
   .right-photo {
     width: 80px;
+    min-height: 240px;
   }
 
   .photo-1,

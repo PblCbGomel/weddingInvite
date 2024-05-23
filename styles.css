@@ -2,11 +2,29 @@
   padding: 0;
   margin: 0;
   font-family: "Rosarium";
+  scrollbar-width: thin;
+  scrollbar-color: #f9f1b9 #fffbdb;
+  cursor: url(./icons/default-cursor.svg), default;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fcfff0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f9dfff;
 }
 
 #location {
-  cursor: pointer;
   transition: 0.3s;
+}
+
+#location * {
+  cursor: url(./icons/active-cursor.svg), default;
 }
 
 #location:hover {
@@ -114,11 +132,20 @@ body {
 .photo-2,
 .photo-3,
 .photo-4 {
+  transition: 0.5s;
   width: 200px;
   height: 200px;
   position: absolute;
   background-size: cover;
   background-position: center;
+  cursor: url(./icons/active-cursor.svg), default;
+}
+
+.photo-1:hover,
+.photo-2:hover,
+.photo-3:hover,
+.photo-4:hover {
+  box-shadow: #656da2 0 0 20px;
 }
 
 .info {
@@ -217,6 +244,12 @@ body {
   height: 50px;
   right: 0;
   top: 57%;
+  transition: 0.5s;
+  cursor: url(./icons/active-cursor.svg), default;
+}
+
+.calendar .heart:hover {
+  background-image: url(./images/heart-hover.png);
 }
 
 .time-info {
@@ -276,6 +309,13 @@ body {
   background-size: cover;
   background-position: center;
   border-radius: 1rem;
+  transition: 0.5s;
+  cursor: url(./icons/active-cursor.svg), default;
+}
+
+.dress-photo-1:hover,
+.dress-photo-2:hover {
+  box-shadow: #f9f1b9 0 0 20px;
 }
 
 .last-word,
